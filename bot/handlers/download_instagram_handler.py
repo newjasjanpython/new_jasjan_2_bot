@@ -7,9 +7,10 @@ import urllib.parse
 context = instaloader.InstaloaderContext()
 context.login("call.new.jasjan", "why?so4why?")
 
-
 def get_scheme(post):
     text = "\n".join(i['node']['text'] for i in post['edge_media_to_caption']['edges'])
+    if 'location' in post:
+        text += str("\n\n" + post['location'])
     return text
 
 
@@ -34,5 +35,8 @@ async def download_youtube_video(msg: types.Message):
             else:
                 media_collection.append(types.InputMediaPhoto(node['node']['display_url']))
     await msg.answer_media_group(types.MediaGroup(media_collection))
-    await msg.answer(get_scheme(post))
+    try:
+        await msg.answer(get_scheme(post))
+    except:
+        pass
     await wait_msg.delete()
