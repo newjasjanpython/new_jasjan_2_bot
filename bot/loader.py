@@ -5,8 +5,8 @@ import logging
 
 
 BOT = {
-    "TOKEN": "6769577280:AAFzvv6QfC51JgGGOg1MWCcO69I6ak22-90",
-    "ADMINS": set((6763040565,)),
+    "TOKEN": "",
+    "ADMINS": [],
     "DATA": ".data",
     "DB": ".db"
 }

@@ -5,7 +5,7 @@ import urllib.parse
 
 
 context = instaloader.InstaloaderContext()
-context.login("call.new.jasjan", "why?so4why?")
+
 
 def get_scheme(post):
     text = "\n".join(i['node']['text'] for i in post['edge_media_to_caption']['edges'])
