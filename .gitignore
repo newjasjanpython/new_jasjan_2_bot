@@ -1,0 +1,5 @@
+.data
+.db
+example.inst.json
+*.pyc
+__pycache__
