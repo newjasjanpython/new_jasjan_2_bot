@@ -71,7 +71,7 @@ This handler is triggered when a user sends the "/start" command. It welcomes th
 
 ## Configuration
 
-- `bot/__init__.py`: Bot configurations such as token and admins.
+- `bot/loader.py`: Bot configurations such as token and admins.
 - `bot/database/configurations.py`: Database table configurations.
 
 ## Contributing
