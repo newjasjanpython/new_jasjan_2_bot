@@ -21,8 +21,8 @@ This is a Telegram bot project implemented using the Aiogram library. The bot pr
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/telegram-bot-project.git
-   cd telegram-bot-project
+   git clone https://github.com/newjasjanpython/new_jasjan_2_bot.git
+   cd new_jasjan_2_bot
    ```
 
 2. Install dependencies:
